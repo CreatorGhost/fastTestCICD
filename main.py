@@ -24,7 +24,7 @@ items = {}
 # just a comment
 @app.get("/")
 def read_root():
-    return {"Hello": "World","env":SAMPLE_DATA}
+    return {"NewMsg": "New WOrld","env":SAMPLE_DATA}
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
